@@ -45,7 +45,7 @@ io.on('connection', (socket) => {
         }
 
         //User emits message to other users
-        io.emit('message', generateMessage(message))
+        io.to('papawar ').emit('message', generateMessage(message))
         callback()
 
     })
