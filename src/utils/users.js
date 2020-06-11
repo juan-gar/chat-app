@@ -55,28 +55,35 @@ const getUsersInRoom = (room) => {
 
 //Tests
 
-addUser({
-    id: 22,
-    username: 'John',
-    room: 'Barcelona'
-})
+// addUser({
+//     id: 22,
+//     username: 'John',
+//     room: 'Barcelona'
+// })
 
-addUser({
-    id: 42,
-    username: 'Mike',
-    room: 'Barcelona'
-})
+// addUser({
+//     id: 42,
+//     username: 'Mike',
+//     room: 'Barcelona'
+// })
 
-addUser({
-    id: 32,
-    username: 'Saul',
-    room: 'Mataro'
-})
+// addUser({
+//     id: 32,
+//     username: 'Saul',
+//     room: 'Mataro'
+// })
 
 // const user = getUser(22)
 
 //console.log(users)
 // console.log(user)
 
-const userList = getUsersInRoom('mataro')
-console.log(userList)
+// const userList = getUsersInRoom('mataro')
+// console.log(userList)
+
+module.exports = {
+    addUser,
+    removeUser,
+    getUser,
+    getUsersInRoom
+}
